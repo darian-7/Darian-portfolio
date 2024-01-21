@@ -98,7 +98,23 @@
                                 <li><a href="https://github.com/darian-7/AI_projects/tree/main/MP10" class="button">View project</a></li>
                             </ul>
                         </article>
-
+                        <!-- PSA MP1 -->
+                        <article data-category="robotics">
+                            <header>
+                                <span class="date">September 2023</span>
+                                <h2><a href="#">lane detection using computer vision</a></h2>
+                            </header>
+                            <div class="video-container" style="max-width: 100%; margin: 1em 0;">
+                                <video autoplay loop muted playsinline style="width: 100%; height: auto;">
+                                    <source src="videos/PSA_MP1.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <p>Performed camera-based lane detection within an autonomous car in <strong>ROS</strong> and <strong>Gazebo</strong> software using the <strong>OpenCV</strong> library in <strong>Python</strong>. This module within the car takes in a video stream and then it is split into many frames to produce an annotated video with the lane area clearly marked. Firstly, a function that uses a gradient threshold and color threshold is used to detect important features in the image, the output is a binary image that highlights the edges of the road along with its lanes. Then a perspective transform is applied to the image to gain a ‘birds-eye-view’, this gives a geometric representation of the lanes on a 2D plane. Finally, the image is split horizontally into several layers and a histogram is used to determine the lane center, the place where pixels are most dense is treated as the centroid of each lane.  </p>
+                            <ul class="actions special">
+                                <li><a href="https://github.com/darian-7/PSA_projects/tree/main/MP1" class="button">View project</a></li>
+                            </ul>
+                        </article>
                         <!-- PSA MP3 -->
                         <article data-category="robotics">
                             <header>
@@ -180,23 +196,6 @@
                             <p>I designed a lateral and longitudinal controller in <strong>Python</strong> that permits a car to autonomously steer itself within a predefined racetrack within <strong>ROS</strong> and <strong>Gazebo</strong> software. Longitudinal control is used to determine the vehicle’s target speed, essentially establishing the track’s curvature and the vehicle’s current state. For example, if the upcoming waypoints suggest a future straight path then speed is increased and vice versa if the waypoints indicate that a turn is imminent. For lateral control, a Pure Pursuit algorithm is used to determine the correct steering angle. This formula incorporates parameters like the car’s lookahead distance and angle between look-ahead line and wheelbase to arrive at the suitable steering angle. The picture depicts the Pure Pursuit geometric relationship which was used in the design of the controllers. </p>
                             <ul class="actions special">
                                 <li><a href="https://github.com/darian-7/PSA_projects/tree/main/MP2" class="button">View project</a></li>
-                            </ul>
-                        </article>
-                        <!-- PSA MP1 -->
-                        <article data-category="robotics">
-                            <header>
-                                <span class="date">September 2023</span>
-                                <h2><a href="#">lane detection using computer vision</a></h2>
-                            </header>
-                            <div class="video-container" style="max-width: 100%; margin: 1em 0;">
-                                <video autoplay loop muted playsinline style="width: 100%; height: auto;">
-                                    <source src="videos/PSA_MP1.mp4" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
-                            </div>
-                            <p>Performed camera-based lane detection within an autonomous car in <strong>ROS</strong> and <strong>Gazebo</strong> software using the <strong>OpenCV</strong> library in <strong>Python</strong>. This module within the car takes in a video stream and then it is split into many frames to produce an annotated video with the lane area clearly marked. Firstly, a function that uses a gradient threshold and color threshold is used to detect important features in the image, the output is a binary image that highlights the edges of the road along with its lanes. Then a perspective transform is applied to the image to gain a ‘birds-eye-view’, this gives a geometric representation of the lanes on a 2D plane. Finally, the image is split horizontally into several layers and a histogram is used to determine the lane center, the place where pixels are most dense is treated as the centroid of each lane.  </p>
-                            <ul class="actions special">
-                                <li><a href="https://github.com/darian-7/PSA_projects/tree/main/MP1" class="button">View project</a></li>
                             </ul>
                         </article>
                         <!-- PSA MP0 -->
