@@ -1,148 +1,361 @@
 <!DOCTYPE HTML>
 <!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+    Massively by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Massively by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+    <head>
+        <title>Darian's project portfolio</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    </head>
+    <body class="is-preload">
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+        <!-- Wrapper -->
+            <div id="wrapper" class="fade-in">
 
-				<!-- Intro -->
-					<div id="intro">
-						<h1>DARIAN IRANI<br />
-					PORTFOLIO</h1>
-						<p>Graduate student studying 'Autonomy & Robotics' at the University of Illinois Urbana-Champaign seeking opportunities in Artificial Intelligence and Robotics.
-						</p>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
+                <!-- Intro -->
+                    <div id="intro">
+                        <h1>DARIAN IRANI<br />
+                    PROJECT PORTFOLIO</h1>
+                        <p>Graduate Autonomy & Robotics student at the University of Illinois Urbana-Champaign with a Mechanical Engineering background seeking opportunities relating to AI/ML, Data Engineering, or Robotics.
+                        </p>
+                        <ul class="actions">
+                            <li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+                        </ul>
+                    </div>
 
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">projects</a>
-					</header>
+                <!-- Header -->
+                    <header id="header">
+                        <a href="index.html" class="logo">projects</a>
+                    </header>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="index.html">Projects</a></li>
+                <!-- Nav -->
+                    <nav id="nav">
+                        <ul class="links">
+                            <li class="active"><a href="index.html">All</a></li>
+                            <li><a href="#ai-ml">AI/ML</a></li>
+                            <li><a href="#robotics">Robotics</a></li>
+                            <li><a href="#mech-eng">Mechanical Engineering</a></li>
+                        </ul>
+                        <ul class="icons">
+                            <li><a href="https://www.linkedin.com/in/darian-i/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                            <li><a href="https://github.com/darian-7" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+                        </ul>
+                    </nav>
+                      
 
-						</ul>
-						<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/darian-i/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							<li><a href="https://github.com/darian-7" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav>
+                <!-- Main -->
+                <div id="main">
+                     <!-- Posts -->
+                     <section class="posts">
+                        <!-- AI MP12 -->
+                        <article data-category="ai-ml">
+                            <header>
+                                <span class="date">October 2023</span>
+                                <h2><a href="#">AI agent for snake game using reinforcement learning </a></h2>
+                            </header>
+                            <div class="video-container" style="max-width: 100%; margin: 1em 0;">
+                                <video autoplay loop muted playsinline style="width: 100%; height: auto;">
+                                    <source src="videos/AI_MP12.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <p>Trained an AI agent using reinforcement learning to autonomously play the game Snake by itself. This was done in <strong>Python</strong> using the <strong>NumPy</strong> and <strong>Pygame</strong> libraries. The agent operates in the environment by defining a Markov Decision Process (MDP) which contains the snake’s states, actions, and rewards. At each timestep the AI snake agent makes a move (up, down, left, right) and receives a reward or penalty depending on where the food and obstacle (a rock) is in the configuration space. A Temporal-Difference (TD) Q-learning algorithm was implemented to choose the optimal action for the AI snake.   </p>
+                            <ul class="actions special">
+                                <li><a href="https://github.com/darian-7/AI_projects/tree/main/MP11-12" class="button">View project</a></li>
+                            </ul>
+                        </article>
+                         <!-- GRAIC -->
+                         <article data-category="robotics">
+                            <header>
+                                <span class="date">October-December 2023</span>
+                                <h2><a href="#">design of path planning algorithm and controller for autonomous car racing </a></h2>
+                            </header>
+                            <div class="video-container" style="max-width: 100%; margin: 1em 0;">
+                                <video autoplay loop muted playsinline style="width: 100%; height: auto;">
+                                    <source src="videos/GRAIC.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <p>Final group project with two other members where we designed the path planning and controller algorithms for an autonomous racing car within the <strong>CARLA</strong> simulator. Hybrid A* search was used as a path planning algorithm that allowed the car to follow optimal waypoints within complex environments (racetracks). This optimal path was then given to a controller with Proportional-Derivative (PD) characteristics so that parameters like steering angle, speed, braking could autonomously be adjusted in real-time for the car’s efficient navigation through the racetracks. As an extension to this project, we tried to incorporate obstacle avoidance into our path planning and controller algorithms. </p>
+                            <ul class="actions special">
+                                <li><a href="https://github.com/darian-7/PSA_projects/tree/main/GRAIC" class="button">View project</a></li>
+                            </ul>
+                        </article>
+                        <!-- AI MP10 -->
+                        <article data-category="ai-ml">
+                            <header>
+                                <span class="date">November 2023</span>
+                                <h2><a href="#">neural net image classifier</h2>
+                            </header>
+                            <a href="#" class="image fit"><img src="images/AI_MP10.jpg" alt="" /></a>
+                            <p>Built an algorithm that incorporates neural networks, non-linear and multi-layer extensions of the linear perceptron to create a classifier that can categorize objects within any image. This was done in <strong>Python</strong> using the <strong>NumPy</strong> and <strong>PyTorch</strong> libraries. A dataset of 3000 31x31 RGB images were used for the training and development examples. A LeakyReLU activation function along with regularization was used to reduce the mean loss and increase convergence. The network consisted of at least four hidden layers between input and output including Convolutional Neural Network layers as they are tailored specifically to signal processing tasks such as image recognition. This image classification algorithm performed at 80% accuracy with unseen pictures.  </p>
+                            <ul class="actions special">
+                                <li><a href="https://github.com/darian-7/AI_projects/tree/main/MP10" class="button">View project</a></li>
+                            </ul>
+                        </article>
 
-				<!-- Main -->
-					<div id="main">
+                        <!-- PSA MP3 -->
+                        <article data-category="robotics">
+                            <header>
+                                <span class="date">November 2023</span>
+                                <h2><a href="#">robot localization using particle filters</a></h2>
+                            </header>
+                            <div class="video-container" style="max-width: 100%; margin: 1em 0;">
+                                <video autoplay loop muted playsinline style="width: 100%; height: auto;">
+                                    <source src="videos/PSA_MP3.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <p>Implemented Monte Carlo Localization (MCL) to localize a vehicle’s unknown environment by algorithms written in <strong>Python</strong> and simulations conducted on <strong>ROS</strong> and <strong>Gazebo</strong>. The MCL algorithm holds a list of randomly generated initialized particles, as the vehicle moves the algorithm shifts the particles to predict its new state after movement. The algorithm runs iteratively and ultimately, most of the particles converge toward the actual state of the vehicle. The objective was to find the position of the vehicle using the sensor readings and constructed map of its environment. A module was created to take raw point cloud data from the LiDAR sensor and process point cloud data, it returns the distance between the vehicle and the wall in four different directions. A particle filter algorithm records the x-y position, orientation, a weight, and map of the environment. </p>
+                            <ul class="actions special">
+                                <li><a href="https://github.com/darian-7/PSA_projects/tree/main/MP3" class="button">View project</a></li>
+                            </ul>
+                        </article>
+                        <!-- AI MP8 -->
+                        <article data-category="ai-ml">
+                            <header>
+                                <span class="date">November 2023</span>
+                                <h2><a href="#">hidden markov model part-of-speech tagger</h2>
+                            </header>
+                            <a href="#" class="image fit"><img src="images/AI_MP8.jpg" alt="" /></a>
+                            <p>Implemented Part of Speech (POS) tagging using a Hidden Markov Model (HMM) in <strong>Python</strong> using the <strong>NumPy</strong> library. I gave the tagging function training data with tags that taught it about the different probabilities and this was finally implemented on my test data without tags. My Baseline tagger considers each word independently, ignoring any previous words or tags. It performs at 70% accuracy on unseen words. I then implemented a Viterbi (trellis) decoding algorithm where the probability of each tag depends on the previous tag, and the probability of each word depends on the corresponding tag (initial, transition, and emission probabilities). Laplace smoothing was used to optimize performance and the Viterbi algorithm performs at at 76% accuracy on unseen words. </p>
+                            <ul class="actions special">
+                                <li><a href="https://github.com/darian-7/AI_projects/tree/main/MP8" class="button">View project</a></li>
+                            </ul>
+                        </article>
+                        <!-- AI MP6 -->
+                        <article data-category="ai-ml">
+                            <header>
+                                <span class="date">October 2023</span>
+                                <h2><a href="#">configuration space planning game </a></h2>
+                            </header>
+                            <div class="video-container" style="max-width: 100%; margin: 1em 0;">
+                                <video autoplay loop muted playsinline style="width: 100%; height: auto;">
+                                    <source src="videos/AI_MP6.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <p>Built an algorithm in <strong>Python</strong> using the <strong>NumPy</strong> and <strong>Pygame</strong> libraries along with Configuration Space Planning to automate an ‘alien’ trying to navigate through a maze to reach a goal state. The maze path is built in a way that requires the alien follow waypoints while also detecting maze edges and morph into new shapes to get through narrow passages. This search tries to find the lowest cost path to a goal node, K-nearest neighbors are only considered to improve runtime.  </p>
+                            <ul class="actions special">
+                                <li><a href="https://github.com/darian-7/AI_projects/tree/main/MP5-6" class="button">View project</a></li>
+                            </ul>
+                        </article>
+                        <!-- AI MP4 -->
+                        <article data-category="ai-ml">
+                            <header>
+                                <span class="date">September 2023</span>
+                                <h2><a href="#">A* search for multi-goal grid search</h2>
+                            </header>
+                            <a href="#" class="image fit"><img src="images/AI_MP4.jpg" alt="" /></a>
+                            <p>Implemented an A* search algorithm in <strong>Python</strong> for two different search problems: EightPuzzle and WordLadder. For the WordLadder search task, I implemented a Best First Search (BFS) algorithm that iteratively searches through neighbors of each state until the shortest path to goal is found, a dictionary keeps track of visited states. For EightPuzzle I implemented a BFS search with a Manhattan heuristic to speed up the search. I then optimized my search algorithm with a Minimum Spanning Tree (MST) heuristic to identify multiple goals given a certain starting state within a Multi Goal Grid Search. </p>
+                            <ul class="actions special">
+                                <li><a href="https://github.com/darian-7/AI_projects/tree/main/MP4" class="button">View project</a></li>
+                            </ul>
+                        </article>
+                        <!-- AI MP2 -->
+                        <article data-category="ai-ml">
+                            <header>
+                                <span class="date">August 2023</span>
+                                <h2><a href="#">movie review classifier</h2>
+                            </header>
+                            <a href="#" class="image fit"><img src="images/AI_MP2.jpg" alt="" /></a>
+                            <p>Designed a movie review classifier in <strong>Python</strong> using the <strong>Natural Language ToolKit (NLTK)</strong> to determine whether a movie review is ‘positive’ or ‘negative’. I used Naive Bayes formulae to train a binary sentiment classifier and the bigram and unigram ‘bag of words’ model in NLP was used to categorize the text in a review as an independent bag of words. A Stanford movie review dataset containing 13000 reviews was used as development and training examples for the algorithm. The movie review classifier performed at 96.4% accuracy with unseen movie reviews. </p>
+                            <ul class="actions special">
+                                <li><a href="https://github.com/darian-7/AI_projects/tree/main/MP2" class="button">View project</a></li>
+                            </ul>
+                        </article>
+    
+                        <!-- PSA MP2 -->
+                        <article data-category="robotics">
+                            <header>
+                                <span class="date">October 2023</span>
+                                <h2><a href="#">design of lateral and longitudinal controller for an autonomous car</h2>
+                            </header>
+                            <a href="#" class="image fit"><img src="images/PSA_MP2.jpg" alt="" /></a>
+                            <p>I designed a lateral and longitudinal controller in <strong>Python</strong> that permits a car to autonomously steer itself within a predefined racetrack within <strong>ROS</strong> and <strong>Gazebo</strong> software. Longitudinal control is used to determine the vehicle’s target speed, essentially establishing the track’s curvature and the vehicle’s current state. For example, if the upcoming waypoints suggest a future straight path then speed is increased and vice versa if the waypoints indicate that a turn is imminent. For lateral control, a Pure Pursuit algorithm is used to determine the correct steering angle. This formula incorporates parameters like the car’s lookahead distance and angle between look-ahead line and wheelbase to arrive at the suitable steering angle. The picture depicts the Pure Pursuit geometric relationship which was used in the design of the controllers. </p>
+                            <ul class="actions special">
+                                <li><a href="https://github.com/darian-7/PSA_projects/tree/main/MP2" class="button">View project</a></li>
+                            </ul>
+                        </article>
+                        <!-- PSA MP1 -->
+                        <article data-category="robotics">
+                            <header>
+                                <span class="date">September 2023</span>
+                                <h2><a href="#">lane detection using computer vision</a></h2>
+                            </header>
+                            <div class="video-container" style="max-width: 100%; margin: 1em 0;">
+                                <video autoplay loop muted playsinline style="width: 100%; height: auto;">
+                                    <source src="videos/PSA_MP1.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                            <p>Performed camera-based lane detection within an autonomous car in <strong>ROS</strong> and <strong>Gazebo</strong> software using the <strong>OpenCV</strong> library in <strong>Python</strong>. This module within the car takes in a video stream and then it is split into many frames to produce an annotated video with the lane area clearly marked. Firstly, a function that uses a gradient threshold and color threshold is used to detect important features in the image, the output is a binary image that highlights the edges of the road along with its lanes. Then a perspective transform is applied to the image to gain a ‘birds-eye-view’, this gives a geometric representation of the lanes on a 2D plane. Finally, the image is split horizontally into several layers and a histogram is used to determine the lane center, the place where pixels are most dense is treated as the centroid of each lane.  </p>
+                            <ul class="actions special">
+                                <li><a href="https://github.com/darian-7/PSA_projects/tree/main/MP1" class="button">View project</a></li>
+                            </ul>
+                        </article>
+                        <!-- PSA MP0 -->
+                        <article data-category="robotics">
+                            <header>
+                                <span class="date">August 2023</span>
+                                <h2><a href="#">Reachability analysis on autonomous car Decision Logic</h2>
+                            </header>
+                            <a href="#" class="image fit"><img src="images/PSA_MP0.jpg" alt="" /></a>
+                            <p>I created the Decision Logic (DL) of an autonomous car in an Automatic Emergency Braking scenario under some assumptions to help the vehicle avoid collisions with pedestrians and maximize average speeds. A preliminary DL was first made by considering all assumptions and its feasibility was tested by plotting multiple simulations on a 3D plot. The red curve represents the car’s trajectory while the blue represents the pedestrian’s, both with respect to time. A reachability analysis was conducted to perform a more thorough check on my DL as it essentially approximates all possible executions, hence if it says the system is safe then you are guaranteed safety. </p>
+                            <ul class="actions special">
+                                <li><a href="https://github.com/darian-7/PSA_projects/tree/main/MP0" class="button">View project</a></li>
+                            </ul>
+                        </article>
+                        <!-- MR CE3 -->
+                        <article data-category="robotics">
+                            <header>
+                                <span class="date">November 2023</span>
+                                <h2><a href="#">lidar-based slam implementation</h2>
+                            </header>
+                            <a href="#" class="image fit"><img src="images/MR_CE3.jpg" alt="" /></a>
+                            <p>Implemented an algorithm in <strong>ROS</strong> and <strong>Python</strong> that collects robot data from a rosbag such as LiDAR measurements and an EKF-estimated trajectory. I used the split-and-merge line fitting algorithm to find and fit corners from LiDAR data. This algorithm and the trajectory of the robot was used to make a geometric map of the robot’s environment. A map was also then constructed based on SLAM, the red trace shows my line-fitting algorithm and the gray map is created by Gmapping. 
 
-						<!-- Posts -->
-							<section class="posts">
-							<article>
-								<header>
-									<span class="date">January-May 2023</span>
-									<h2><a href="#">Final year dissertation: Evaluation of Medicated Chewing Gums and Frankfort-mandibular plane angle</h2>
-								</header>
-								<a href="#" class="image fit"><img src="images/adaptorfinal.jpg" alt="" /></a>
-								<p>My final year thesis focused on the impact of human jaw angle on the effectiveness of Medicated Chewing Gums (MCGs). Custom experiments were designed using an Instron compression machine and adaptors mimicking the human jaw angle and its molars. The adaptors were designed on Siemens NX and manufactured in aluminium and stainless steel material. Data gathered using the designed adaptors and 'Two-bite test' on the Instron machine resulted in important conclusions about how the human mandible jaw angle affects chewing efficiency.</p>
-								<ul class="actions special">
-									<li><a href="https://github.com/darian-7/UoB_IRP" class="button">View project</a></li>
-								</ul>
-							</article>
-								<article>
-									<header>
-										<span class="date">September-December 2022</span>
-										<h2><a href="#">FEA investigation to analyze structural integrity</h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/liftinglug.jpg" alt="" /></a>
-									<p>Conducted an FE analysis using Abaqus CAE on the structural integrity of lifting lugs of a Gas Combustion Unit. Completed a mesh convergence study which was validated with numerical solutions. Carried out an in-depth analysis into the failure characteristics of the GCU's load-bearing structural components using MATLAB. </p>
-									<ul class="actions special">
-										<li><a href="https://github.com/darian-7/FEA-investigation.git" class="button">View project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">June-August 2022</span>
-										<h2><a href="#">Human-Robot shared control research project</h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/BRLfranka-emika.jpg" alt="" /></a>
-									<p>Worked one-to-one with Dr. Dandan Zhang from the University of Bristol exploring human-robot interaction. Conducted robotic arm simulations on CoppeliaSim that followed a script that I programmed on Python. Programmed Python code that uses OpenCV library for facial recognition to remotely control a robot.</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/darian-7/Human-Robot-shared-control" class="button">View project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">February-May 2022</span>
-										<h2><a href="#">Convertible roof mechanism design</h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/hardwareschematic.jpg" alt="" /></a>
-									<p>Group project focused on designing the mechatronics and roof mechanism of the Fiat 595. Selected sensors for the roof mechanism which were tested and programmed with the roof motor on Arduino IDE. Conducted mathematical modelling on MATLAB relating to the roof’s motor, gears, dampers and anticipated
-										aerodynamic resistance. Carried out Finite Element Analysis on Fusion 360 and roof mechanism simulation on Linkage.</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/darian-7/convertible-roof-mechanism-design" class="button">view project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">November-December 2021</span>
-										<h2><a href="#">rear axle design for high performance atv</h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/ATVaxle.jpg" alt="" /></a>
-									<p>Pre-requisite project to the <a href="#">Convertible Roof Mechanism Design</a> project that introduced different elements of being able to successfully manufacture a high-performance component of a vehicle. The project involved interpreting industry-level catalogues to pick gear, sprocket and bearing sizes. 
-										These selections were made using simple gear ratio, transmission and load calculations for the ATV. The assembly of the axle was modelled on Fusion 360.</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/darian-7/performance-ATV" class="button">view project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">January-May 2021</span>
-										<h2><a href="#">mathematical modelling of a wind turbine farm</h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/nacelle.jpg" alt="" /></a>
-									<p>Designed a wind turbine nacelle and carried out calculations involving turbine power outputs. Created a mathematical model on MATLAB that calculated wind power output based on external factors such as
-										wind speed, density, yaw angle, wake, and others. Conducted market research on different types of gearbox assembly which was ultimately designed on Fusion 360.</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/darian-7/wind-turbine-farm" class="button">view project</a></li>
-									</ul>
-								</article>
-							</section>
+                            </p>
+                            <ul class="actions special">
+                                <li><a href="https://github.com/darian-7/MR_Projects/tree/main/CE3" class="button">View project</a></li>
+                            </ul>
+                        </article>
+                        <!-- MR CE2 -->
+                        <article data-category="robotics">
+                            <header>
+                                <span class="date">October 2023</span>
+                                <h2><a href="#">kalman filter and ekf implementation</h2>
+                            </header>
+                            <a href="#" class="image fit"><img src="images/MR_CE2.jpg" alt="" /></a>
+                            <p>Implemented a robust algorithm that fuses GPS and inertial measurements with an Extended Kalman Filter (EKF) for accurate robot localization within <strong>Python</strong> and <strong>ROS</strong>. Inertial measurements provide information about position and orientation of the robot and the GPS only provides positional measurements. After playing the appropriate rosbag, several callback functions extract information from the robot such as its angular velocity and linear acceleration in all three axes, GPS position in all three axes. Plots such as estimated xy trajectory, euler angles, gyroscope bias, orientation, etc. of the robot give a visual representation of the performance of the Kalman filter. </p>
+                            <ul class="actions special">
+                                <li><a href="https://github.com/darian-7/MR_Projects/tree/main/CE2" class="button">View project</a></li>
+                            </ul>
+                        </article>
+                        <!-- rtab -->
+                        <article data-category="robotics">
+                            <header>
+                                <span class="date">December 2023</span>
+                                <h2><a href="#">evaluation of SLAM system performance in different environments</h2>
+                            </header>
+                            <a href="#" class="image fit"><img src="images/rtab.jpg" alt="" /></a>
+                            <p>Performed RGB-D SLAM on <strong>ROS</strong> and <strong>Python</strong> using recorded image data from a robot with a ZED camera and GPS module, IMU, and wheel encoders. These sensors’ measurements were fused by an Extended Kalman Filter (EKF), which computes an approximation of the ground-truth trajectory. I used RTAB-Map (Real-Time Appearance-Based Mapping) on two different rosbags and gathered 3D plots of robot trajectories, I then investigated the results from both rosbags using metrics such as the data’s Root-Mean-Square Error (RMSE). 
 
-					</div>
+                            </p>
+                            <ul class="actions special">
+                                <li><a href="https://github.com/darian-7/MR_Projects/tree/main/RTAB-Map" class="button">View project</a></li>
+                            </ul>
+                        </article>
+                        <!-- ME dissertation -->
+                        <article data-category="mech-eng">
+                            <header>
+                                <span class="date">January-May 2023</span>
+                                <h2><a href="#">Evaluation of Medicated Chewing Gums and Frankfort-mandibular plane angle</h2>
+                            </header>
+                            <a href="#" class="image fit"><img src="images/adaptor.jpg" alt="" /></a>
+                            <p>My final year thesis focused on the impact of human jaw angle on the effectiveness of Medicated Chewing Gums (MCGs). Custom experiments were designed using an Instron compression machine and adaptors mimicking the human jaw angle and its molars. The adaptors were designed on <strong>Siemens NX</strong> and manufactured in aluminium and stainless steel material. Data gathered using the designed adaptors and 'Two-bite test' on the Instron machine resulted in important conclusions about how the human mandible jaw angle affects chewing efficiency.</p>
+                            <ul class="actions special">
+                                <li><a href="https://github.com/darian-7/UoB_IRP" class="button">View project</a></li>
+                            </ul>
+                        </article>
+                        <!-- FEA mechanics project -->
+                        <article data-category="mech-eng">
+                                <header>
+                                    <span class="date">September-December 2022</span>
+                                    <h2><a href="#">FEA investigation to analyze structural integrity</h2>
+                                </header>
+                                <a href="#" class="image fit"><img src="images/liftinglug.jpg" alt="" /></a>
+                                <p>Conducted an FE analysis using <strong>Abaqus CAE</strong> on the structural integrity of lifting lugs of a Gas Combustion Unit. Completed a mesh convergence study which was validated with numerical solutions. Carried out an in-depth analysis into the failure characteristics of the GCU's load-bearing structural components using <strong>MATLAB</strong>. </p>
+                                <ul class="actions special">
+                                    <li><a href="https://github.com/darian-7/FEA-investigation.git" class="button">View project</a></li>
+                                </ul>
+                            </article>
+                            <!-- Dandan Zhang robo -->
+                            <article data-category="robotics">
+                                <header>
+                                    <span class="date">June-August 2022</span>
+                                    <h2><a href="#">Human-Robot shared control research project</h2>
+                                </header>
+                                <a href="#" class="image fit"><img src="images/BRLfranka-emika.jpg" alt="" /></a>
+                                <p>Worked one-to-one with Dr. Dandan Zhang from the University of Bristol exploring human-robot interaction. Conducted robotic arm simulations on <strong>CoppeliaSim</strong> that followed a script that I programmed on <strong>Python</strong>. Programmed <strong>Python</strong> code that uses <strong>OpenCV</strong> library for facial recognition to remotely control a robot.</p>
+                                <ul class="actions special">
+                                    <li><a href="https://github.com/darian-7/Human-Robot-shared-control" class="button">View project</a></li>
+                                </ul>
+                            </article>
+                            <!-- Fiat 595 convertible roof -->
+                            <article data-category="mech-eng">
+                                <header>
+                                    <span class="date">February-May 2022</span>
+                                    <h2><a href="#">Convertible roof mechanism design</h2>
+                                </header>
+                                <a href="#" class="image fit"><img src="images/hardwareschematic.jpg" alt="" /></a>
+                                <p>Group project focused on designing the mechatronics and roof mechanism of the Fiat 595. Selected sensors for the roof mechanism which were tested and programmed with the roof motor on the <strong>Arduino IDE</strong>. Conducted mathematical modelling on <strong>MATLAB</strong> relating to the roof’s motor, gears, dampers and anticipated
+                                    aerodynamic resistance. Carried out Finite Element Analysis on <strong>Fusion 360</strong> and roof mechanism simulation on <strong>Linkage</strong>.</p>
+                                <ul class="actions special">
+                                    <li><a href="https://github.com/darian-7/convertible-roof-mechanism-design" class="button">view project</a></li>
+                                </ul>
+                            </article>
+                            <!-- ATV rear axle -->
+                            <article data-category="mech-eng">
+                                <header>
+                                    <span class="date">November-December 2021</span>
+                                    <h2><a href="#">rear axle design for high performance atv</h2>
+                                </header>
+                                <a href="#" class="image fit"><img src="images/ATVaxle.jpg" alt="" /></a>
+                                <p>Pre-requisite project to the <a href="#">Convertible Roof Mechanism Design</a> project that introduced different elements of being able to successfully manufacture a high-performance component of a vehicle. The project involved interpreting industry-level catalogues to pick gear, sprocket and bearing sizes. 
+                                    These selections were made using simple gear ratio, transmission and load calculations for the ATV. The assembly of the axle was modelled on <strong>Fusion 360</strong>.</p>
+                                <ul class="actions special">
+                                    <li><a href="https://github.com/darian-7/performance-ATV" class="button">view project</a></li>
+                                </ul>
+                            </article>
+                            <!-- Wind turbine farm -->
+                            <article data-category="mech-eng">
+                                <header>
+                                    <span class="date">January-May 2021</span>
+                                    <h2><a href="#">mathematical modelling of a wind turbine farm</h2>
+                                </header>
+                                <a href="#" class="image fit"><img src="images/nacelle.jpg" alt="" /></a>
+                                <p>Designed a wind turbine nacelle and carried out calculations involving turbine power outputs. Created a mathematical model on <strong>MATLAB</strong> that calculated wind power output based on external factors such as
+                                    wind speed, density, yaw angle, wake, and others. Conducted market research on different types of gearbox assembly which was ultimately designed on <strong>Fusion 360</strong>.</p>
+                                <ul class="actions special">
+                                    <li><a href="https://github.com/darian-7/wind-turbine-farm" class="button">view project</a></li>
+                                </ul>
+                            </article>
+                        </section>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<section>
-						<section class="split contact">
-							<section>
-								<h3>Phone</h3>
-								<p>Primary: +44 7848284225<br>
-								Secondary: +971 508513234</p>
-							</section>
-							<section>
-								<h3>Email</h3>
-								<p><a href="mailto:iranidarian@gmail.com">iranidarian@gmail.com</a></p>
-							</section>
-							<section>
-								<section>
-									<h3>LinkedIn</h3>
-									<p><a href="https://www.linkedin.com/in/darian-i/">https://www.linkedin.com/in/darian-i/</a></p>
-								</section>
-						</section>
-					</footer>
+                </div>
+
+                <!-- Footer -->
+                    <footer id="footer">
+                        <section>
+                        <section class="split contact">
+                            <section>
+                                <h3>Phone</h3>
+                                <p>WhatsApp: +44 7848284225<br>
+                                +1 (217) 9740666<br>
+                                +971 508513234</p>
+                            </section>
+                            <section>
+                                <h3>Email</h3>
+                                <p style="margin-bottom: 5px;"><a href="mailto:iranidarian@gmail.com">iranidarian@gmail.com</a></p> <!-- Reduced bottom margin -->
+                                <p><a href="mailto:irani2@illinois.edu">irani2@illinois.edu</a></p>
+                            </section>
+                            <section>
+                                <section>
+                                    <h3>LinkedIn</h3>
+                                    <p><a href="https://www.linkedin.com/in/darian-i/">https://www.linkedin.com/in/darian-i/</a></p>
+                                </section>
+                                <section>
+                                    <h3>GitHub</h3>
+                                    <p><a href="https://github.com/darian-7">https://github.com/darian-7</a></p>
+                                </section>
+                        </section>
+                    </footer>
 
 				<!-- Copyright -->
 					<div id="copyright">
@@ -152,13 +365,13 @@
 			</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/jquery.scrollex.min.js"></script>
+            <script src="assets/js/jquery.scrolly.min.js"></script>
+            <script src="assets/js/browser.min.js"></script>
+            <script src="assets/js/breakpoints.min.js"></script>
+            <script src="assets/js/util.js"></script>
+            <script src="assets/js/main.js"></script>
 
-	</body>
+    </body>
 </html>
