@@ -81,23 +81,7 @@
                                 <li><a href="https://github.com/darian-7/AI_projects/tree/main/MP11-12" class="button">View project</a></li>
                             </ul>
                         </article>
-                        <!-- CS588 final project -->
-                        <article data-category="robotics">
-                            <header>
-                                <span class="date">March-May 2024</span>
-                                <h2><a href="#">end-to-end self-driving angled parking logic</a></h2>
-                            </header>
-                            <div class="video-container" style="max-width: 100%; margin: 1em 0;">
-                                <video autoplay loop muted playsinline style="width: 100%; height: auto;">
-                                    <source src="videos/gem.mp4" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
-                            </div>
-                            <p>This group project aimed to design the logic of a car autonomously detecting empty parking spots and executing an end-to-end parking process without any human intervention. First, a <strong>ZED</strong> and <strong>LiDAR</strong> camera collects data from a parking lot in the form of <strong>rosbags</strong>. These <strong>ROS</strong> images are interpreted by <strong>Python's OpenCV</strong> library and a <strong>YOLO v8 model</strong> is used to classify a parking spot as empty or occupied with a <strong>Mean Average Precision</strong> score of <strong>95%</strong>. A <strong>gradient filter</strong> is applied to identify the midpoint of the parking box so that the end pose of the car is identified. These pose parameters are inputted into a <strong>Hybrid A* planner</strong> with a <strong>Reeds Shepp</strong> heuristic which generates a waypoint list for the tracker. The tracker follows this waypoint list and moves the car closer to the parking spot, this processing runs in a loop until the car is in the optimal pose to steer into the parking box. As a final outcome of this project, we achieved a fully autonomous, uninterrupted parking simulation where the vehicle was parked parallel and equidistant to the parking lines. </p>
-                            <ul class="actions special">
-                                <li><a href="https://github.com/darian-7/autonomous-parking" class="button">View project</a></li>
-                            </ul>
-                        </article>
+                
                          <!-- GRAIC -->
                          <article data-category="robotics">
                             <header>
