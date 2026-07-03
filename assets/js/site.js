@@ -207,7 +207,6 @@
         '<article class="project-card" data-cat="' + p.cat + '" data-reveal>' +
           '<div class="project-figure">' +
             mediaHtml +
-            '<span class="cat-tag">' + CAT_LABEL[p.cat] + '</span>' +
           '</div>' +
           '<div class="project-body">' +
             '<div class="project-num">' + num + '</div>' +
